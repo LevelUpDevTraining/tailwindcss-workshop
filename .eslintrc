@@ -1,0 +1,15 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-parens": "off",
+    "no-mixed-operators": "off"
+  },
+  "ignorePatterns": ["node_modules/", ".next/"],
+  "settings": {
+    "import/resolver": {
+      "alias": [["@components", "./components"]]
+    }
+  }
+}
