@@ -1,2 +1,3 @@
-# css-workshop
-CSS Workshop
+# tailwindcss-workshop
+
+Tailwind CSS Workshop

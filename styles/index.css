@@ -1,0 +1,88 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@layer components {
+  /* Global */
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans;
+  }
+  h1 {
+    @apply text-5xl font-bold;
+  }
+  h2 {
+    @apply text-4xl font-bold;
+  }
+  h3 {
+    @apply text-3xl font-bold;
+  }
+  h4 {
+    @apply text-2xl font-bold;
+  }
+  h5 {
+    @apply text-xl font-bold;
+  }
+  h6 {
+    @apply text-lg font-bold;
+  }
+  a:hover {
+    @apply underline;
+  }
+  .full-screen {
+    @apply w-screen min-h-screen;
+    max-width: 100%;
+  }
+  .container-center {
+    @apply container mx-auto;
+  }
+  .container-pad-x {
+    @apply md:px-10 xl:px-40;
+  }
+  .pad {
+    @apply p-2;
+  }
+  .pad-t {
+    @apply pt-2;
+  }
+  .pad-b {
+    @apply pb-2;
+  }
+  .pad-x {
+    @apply px-2;
+  }
+  .pad-y {
+    @apply py-2;
+  }
+  .debug {
+    @apply border border-red-500 bg-green-100;
+  }
+  .btn {
+    @apply text-lg transition duration-500 ease-in-out bg-green-400 text-black hover:text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
+  }
+  .btn-icon {
+    @apply focus:outline-none border-none hover:bg-gray-400 hover:bg-opacity-25 p-2 rounded-full inline-flex items-center;
+  }
+  .bg-brand {
+    @apply bg-cover bg-no-repeat bg-top;
+    background-image: linear-gradient(
+        rgba(18, 26, 46, 0.8),
+        rgba(18, 26, 46, 0.8)
+      ),
+      url(/img/brand.jpg);
+  }
+}
