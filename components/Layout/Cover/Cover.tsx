@@ -1,4 +1,4 @@
-import SlideUp from '@components/Transitions/SlideRight';
+import SlideUp from '@components/Transitions/SlideUp';
 
 export default function Cover() {
   return (
